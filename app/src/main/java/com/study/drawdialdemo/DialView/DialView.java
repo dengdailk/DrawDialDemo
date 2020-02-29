@@ -1,4 +1,4 @@
-package com.study.drawdialdemo;
+package com.study.drawdialdemo.DialView;
 
 import android.content.Context;
 import android.graphics.Bitmap;
@@ -11,6 +11,8 @@ import android.util.AttributeSet;
 import android.view.SurfaceHolder;
 import android.view.SurfaceHolder.Callback;
 import android.view.SurfaceView;
+
+import com.study.drawdialdemo.R;
 
 /**
  * @author dengdai
@@ -80,9 +82,9 @@ public class DialView extends SurfaceView implements Callback, Runnable {
         canvas.save();
     }
     public void logic() {
-        if (bigDialDegrees < 200 && bigDialDegrees<bigDialDegreesMax)
+        if (bigDialDegrees < 200 && bigDialDegrees<=bigDialDegreesMax)
             bigDialDegrees++;
-        if (smallDialDegrees > -120 && smallDialDegrees>smallDialDegreesMax)
+        if (smallDialDegrees > -120 && smallDialDegrees>=smallDialDegreesMax)
             smallDialDegrees--;
     }
 

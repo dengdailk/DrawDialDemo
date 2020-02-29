@@ -4,6 +4,9 @@ import androidx.appcompat.app.AppCompatActivity;
 
 import android.os.Bundle;
 
+import com.study.drawdialdemo.DialView.DialView;
+import com.study.drawdialdemo.oilview.OilView;
+
 public class MainActivity extends AppCompatActivity {
 
     @Override
@@ -13,5 +16,7 @@ public class MainActivity extends AppCompatActivity {
         DialView dialView = findViewById(R.id.dialView);
         dialView.setBigDialDegreesMax(50);
         dialView.setSmallDialDegreesMax(-90);
+        OilView oilView = findViewById(R.id.oilView);
+        oilView.setAngelMax(10);
     }
 }
